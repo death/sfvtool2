@@ -1,0 +1,27 @@
+HKCR
+{
+	SFVTool2.SFVContextMenu.1 = s 'SFVContextMenu Class'
+	{
+		CLSID = s '{E0706304-9541-4C27-B02C-CE6F7376A60F}'
+	}
+	SFVTool2.SFVContextMenu = s 'SFVContextMenu Class'
+	{
+		CLSID = s '{E0706304-9541-4C27-B02C-CE6F7376A60F}'
+		CurVer = s 'SFVTool2.SFVContextMenu.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {E0706304-9541-4C27-B02C-CE6F7376A60F} = s 'SFVContextMenu Class'
+		{
+			ProgID = s 'SFVTool2.SFVContextMenu.1'
+			VersionIndependentProgID = s 'SFVTool2.SFVContextMenu'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{21A07DE4-D513-4D8D-806A-A1A180ED2209}'
+		}
+	}
+}

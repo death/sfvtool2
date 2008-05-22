@@ -1,0 +1,99 @@
+                                    SFV Tool
+                                  Version 2.03
+                             by DEATH of Execution
+                                      2002
+컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴
+
+Contents
+---------
+1.      - Overview
+2.      - Disclaimer
+3.      - What to do?
+4.      - Technical notes
+5.      - Contacting the author
+6.      - The future of SFVTool
+7.      - History of SFVTool
+8.      - Greetings and Thank you's
+
+
+1. Overview
+------------
+SFVTool is a context menu shell extension to create/check SFV files.
+SFVTool2 is a full rewrite. No more lame ass bugs (hopefully) and nicer
+interface/features, also much faster.
+
+2. Disclaimer
+--------------
+I'm not responsible for anything ;)
+
+
+3. What to do?
+---------------
+Installation of the shell extension:
+    1) Copy the DLL to wherever you want to install it
+        (ex. C:\Windows\System, C:\Winnt\System32)
+    2) Run REGSVR32 SFVTool2.DLL to register it
+
+Uninstallation of the shell extension:
+    1) Run REGSVR32 /u SFVTool2.dll to unregister it
+    2) Delete SFVTool2.dll
+
+Notice: SFVTool2 doesn't have the same GUID as SFVTool. If you upgrade
+from SFVTool, it would be wise to uninstall it: REGSVR32 /u SFVTool.dll .
+
+
+4. Technical notes
+-------------------
+I used Visual C++, STL and ATL libraries to write the shell extension.
+
+
+5. Contacting the author
+-------------------------
+The author is DEATH of Execution group (a coding group). You may contact me
+if you have suggesstions, bug reports, or any other thing that might
+interest me. Contact me via:
+
+    Email: ab4ds@hotmail.com
+    Web: http://execution.cjb.net/
+    IRC: EFnet's #cracking4newbies, #execution my nickname is _death.
+
+
+6. The future of SFVTool
+-------------------------
+    -   Well, bugs?
+
+
+7. History of SFVTool
+----------------------
+1.0       - Initial release
+1.01      - Now detects when to show the Create/Check SFV menu item.
+          - Now CR/LF terminates a line in the SFV file.
+          - Minor changes in the initialization function.
+          - Built for Release.
+1.02      - Progress bar fixed in checking SFV with small files.
+2.00      - Fully rewritten. Better everything!
+2.01      - Minor interface changes.
+          - Errorneous files remain 'unchecked'.
+          - Shows errorneous files message.
+2.02      - Shows '---' in CRC field for files not yet checked.
+          - Shows 'Missing' for files that are missing :)
+          - Changed caption in check/create dialog.
+          - Added progress bar.
+          - Statically linked the VC7 libraries.
+2.03      - Made the check/create SFV dialog resizable.
+          - Shows 'Checking...' on currently checked file (creator).
+          - Better error reporting when creating SFVs.
+          - Saving the positions of the check/create SFV dialog.
+          - Fixed a bug when opening more than one instance of
+            the checker or creator.
+          - Added a cool icon.
+2.??	  - Fixed a bug when rechecking missing files.
+          - Memory leaks fixed.
+
+8. Greetings and Thank you's
+-----------------------------
+I greet everyone :)
+Thanks to Wolf for asking for this tool.
+
+                                                        C'ya, DEATH
+

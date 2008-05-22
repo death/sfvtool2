@@ -1,0 +1,40 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SFVTool2", "SFVTool2.vcproj", "{23AD34CB-BA0C-4828-AF8F-29A7529A6806}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SFVTool2PS", "SFVTool2PS.vcproj", "{9654687C-ACDD-4292-B9A5-237EE4D3D14D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{23AD34CB-BA0C-4828-AF8F-29A7529A6806} = {23AD34CB-BA0C-4828-AF8F-29A7529A6806}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 3
+		SccLocalPath0 = .
+		CanCheckoutShared = false
+		SolutionUniqueID = {FDF1FE91-F277-44B2-B4DA-CF4F16A47EAE}
+		SccProjectUniqueName1 = SFVTool2.vcproj
+		SccLocalPath1 = .
+		CanCheckoutShared = false
+		SccProjectUniqueName2 = SFVTool2PS.vcproj
+		SccLocalPath2 = .
+		CanCheckoutShared = false
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{23AD34CB-BA0C-4828-AF8F-29A7529A6806}.Debug.ActiveCfg = Debug|Win32
+		{23AD34CB-BA0C-4828-AF8F-29A7529A6806}.Debug.Build.0 = Debug|Win32
+		{23AD34CB-BA0C-4828-AF8F-29A7529A6806}.Release.ActiveCfg = Release|Win32
+		{23AD34CB-BA0C-4828-AF8F-29A7529A6806}.Release.Build.0 = Release|Win32
+		{9654687C-ACDD-4292-B9A5-237EE4D3D14D}.Debug.ActiveCfg = Debug|Win32
+		{9654687C-ACDD-4292-B9A5-237EE4D3D14D}.Release.ActiveCfg = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

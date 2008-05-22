@@ -1,0 +1,36 @@
+// SFVTool2.idl : IDL source for SFVTool2
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (SFVTool2.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(789C72B7-8F2F-43AB-8171-0ECFCF0A3E84),
+	dual,
+	nonextensible,
+	helpstring("ISFVContextMenu Interface"),
+	pointer_default(unique)
+]
+interface ISFVContextMenu : IDispatch{
+};
+[
+	uuid(21A07DE4-D513-4D8D-806A-A1A180ED2209),
+	version(1.0),
+	helpstring("SFVTool2 1.0 Type Library")
+]
+library SFVTool2Lib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(E0706304-9541-4C27-B02C-CE6F7376A60F),
+		helpstring("SFVContextMenu Class")
+	]
+	coclass SFVContextMenu
+	{
+		[default] interface ISFVContextMenu;
+	};
+};

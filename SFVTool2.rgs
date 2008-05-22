@@ -1,0 +1,21 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		'%APPID%' = s 'SFVTool2'
+		'SFVTool2.DLL'
+		{
+			val AppID = s '%APPID%'
+		}
+	}
+	NoRemove *
+	{
+	    NoRemove ShellEx
+	    {
+	        NoRemove ContextMenuHandlers
+	        {
+	            ForceRemove SFVTool2 = s '{E0706304-9541-4C27-B02C-CE6F7376A60F}'
+	        }
+	    }
+	}
+}

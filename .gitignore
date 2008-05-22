@@ -1,0 +1,16 @@
+Debug
+Release
+DebugPS
+ReleasePS
+*~
+*.aps
+*.ncb
+*.old
+*.vspscc
+*.vssscc
+*.suo
+*.scc
+dlldata.c
+SFVTool2.h
+SFVTool2_i.c
+SFVTool2_p.c
